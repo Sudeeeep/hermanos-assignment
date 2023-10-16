@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.header-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+.header-primary-logo {
+  width: 200px;
+  height: 75px;
+  cursor: pointer;
+}
+
+.header-secondary-logo {
+  width: 75px;
+}
+
+.header-details {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-contact {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-contact-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.language-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.language-container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.header-contact-icons {
+  font-size: 35px;
+}
+
+.header-contact-child-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.header-contact-child-text > p {
+  color: grey;
+  font-weight: 600;
+}
+
+.header-contact-child-text > h4:hover {
+  text-decoration: underline;
+}
+
+/* Nav Bar*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  background-color: #40b8fb;
+  color: white;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+ul > li {
+  list-style-type: none;
+  padding: 1rem 1.25rem;
+  font-size: large;
+  cursor: pointer;
+}
+
+ul > li:hover {
+  background-color: #107df7;
+}
+
+.search {
+  background-color: #107df7;
+  color: white;
+  height: 100%;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 1rem;
+  left: 0.25rem;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+@media (max-width: 1256px) {
+  /* Header */
+
+  .header-primary-logo {
+    width: 140px;
+    height: 70px;
+  }
+
+  .header-secondary-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .language-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header-contact-icons {
+    font-size: 30px;
+  }
+
+  .header-contact-child-text {
+    font-size: 14px;
+  }
+
+  /* Nav Bar */
+
+  .search-icon {
+    top: 1.5rem;
+  }
+}
