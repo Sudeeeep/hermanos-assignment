@@ -1,3 +1,5 @@
+new Glide(".glide").mount();
+
 const accordian = document.querySelectorAll(".accordian");
 const submitBtn = document.querySelector("button[type=submit]");
 const form = document.querySelector("form");
