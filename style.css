@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-position: inside;
+  list-style: none;
+}
+
 /* Header */
 
 header {
@@ -122,7 +127,7 @@ header {
   left: 0.25rem;
 }
 
-::placeholder {
+.search-container ::placeholder {
   color: white;
   opacity: 1;
 }
@@ -180,6 +185,7 @@ header {
   transform: scale(1.02);
 }
 
+/* Secondary Nav Bar */
 .secondary-nav-bar {
   display: flex;
   padding: 0 4rem;
@@ -199,6 +205,154 @@ header {
 
 .secondary-nav-bar > a:focus {
   border-bottom: 3px solid #107df7;
+}
+
+/* Details Section*/
+.details-section {
+  padding: 0 4rem;
+}
+
+#overview {
+  display: flex;
+  gap: 4rem;
+  padding: 4rem 0;
+  border-bottom: 2px dotted #107df7;
+}
+
+.overview-image {
+  max-width: 500px;
+}
+
+.details-content {
+  padding: 4rem 0;
+  border-bottom: 2px dotted #107df7;
+}
+
+.period {
+  color: red;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-text h1 {
+  font-size: 2.5rem;
+}
+
+.content-text p {
+  color: #5a5e65;
+  font-weight: 500;
+}
+
+.content-text ul {
+  color: #5a5e65;
+}
+
+.content-text ul li::before {
+  content: "\2218";
+  color: #107df7;
+  font-weight: bold;
+}
+
+.details-with-form {
+  display: flex;
+  gap: 4rem;
+}
+
+.help-form-container {
+  position: sticky;
+  top: 0;
+  padding: 2rem 0;
+}
+
+.help-form {
+  display: flex;
+  min-width: 25vw;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 1px 1px 9px -1px rgba(90, 94, 101, 1);
+  -moz-box-shadow: 1px 1px 9px -1px rgba(90, 94, 101, 1);
+  box-shadow: 1px 1px 9px -1px rgba(90, 94, 101, 1);
+  padding: 2rem 2rem;
+}
+
+.help-form h1 {
+  font-style: italic;
+  color: #107df7;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+form input {
+  padding: 1rem 1rem;
+}
+
+form input[id="description"] {
+  min-height: 5rem;
+}
+
+form button {
+  padding: 1rem 0;
+  color: white;
+  background-color: #107df7;
+  border: none;
+}
+
+.accordian-container {
+  border-top: 1px solid grey;
+}
+
+.accordian {
+  border-bottom: 1px solid grey;
+}
+
+.accordian-label {
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.accordian-label::before {
+  content: "+";
+  padding: 0 0.5rem;
+  color: #107df7;
+}
+
+.accordian-content {
+  position: relative;
+  max-width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.1s;
+}
+
+.accordian.active {
+  border-bottom: 1px solid #107df7;
+}
+
+.accordian.active .accordian-content {
+  min-height: 2rem;
+  max-height: fit-content;
+  max-width: 100%;
+  margin: 1rem 0 1rem 1rem;
+  padding-left: 1rem;
+  border-left: 2px solid #107df7;
+}
+
+.accordian.active .accordian-label {
+  border-bottom: 1px solid #107df7;
+}
+
+.accordian.active .accordian-label::before {
+  content: "-";
+  padding: 0 0.5rem;
 }
 
 @media (max-width: 1256px) {
