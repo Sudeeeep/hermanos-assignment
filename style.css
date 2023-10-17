@@ -127,6 +127,59 @@ ul > li:hover {
   opacity: 1;
 }
 
+.cta-container {
+  padding: 4rem;
+  color: white;
+  background-color: blue;
+  background-image: url("https://scottsdaleorthospecialist.com/wp-content/uploads/2018/08/shutterstock_1080169544.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cta {
+  max-width: 50%;
+}
+
+.cta-path {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cta-path > span {
+  color: red;
+  vertical-align: middle;
+  padding: 0 0.5rem;
+}
+
+.cta-header {
+  font-size: 3rem;
+}
+
+.cta-sub-header {
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+.cta-header,
+.cta-sub-header {
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  background-color: #40b8fb;
+  color: white;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  transform: scale(1.02);
+}
+
 @media (max-width: 1256px) {
   /* Header */
 
