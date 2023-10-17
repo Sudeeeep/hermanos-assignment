@@ -14,8 +14,17 @@ ul {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 2rem;
   padding: 0 4rem;
+}
+
+.header-menu {
+  display: none;
+}
+
+.header-menu span {
+  font-size: 2rem;
 }
 
 .header-logo-container {
@@ -39,6 +48,13 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.mobile-header-details {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .header-contact {
@@ -93,19 +109,34 @@ header {
   color: white;
 }
 
+.primary-nav-bar-menu {
+  align-self: center;
+  display: none;
+}
+
 .primary-nav-bar-list {
   display: flex;
   align-items: center;
 }
 
-.primary-nav-bar-list > li {
+.primary-mobile-nav-bar-list {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  background-color: #40b8fb;
+  color: white;
+}
+
+.primary-nav-bar-list > li,
+.primary-mobile-nav-bar-list > li {
   list-style-type: none;
   padding: 1rem 1.25rem;
   font-size: large;
   cursor: pointer;
 }
 
-.primary-nav-bar-list > li:hover {
+.primary-nav-bar-list > li:hover,
+.primary-mobile-nav-bar-list > li:hover {
   background-color: #107df7;
 }
 
@@ -203,6 +234,7 @@ header {
   cursor: pointer;
   color: #5a5e65;
   font-weight: 600;
+  line-clamp: 1;
 }
 
 .secondary-nav-bar > a:focus {
@@ -677,5 +709,128 @@ footer {
 
   .search-icon {
     top: 1.5rem;
+  }
+}
+
+@media (max-width: 1256px) {
+  .header-menu {
+    display: block;
+  }
+
+  .header-details {
+    display: none;
+  }
+
+  .primary-nav-bar-menu {
+    display: block;
+  }
+
+  .primary-nav-bar ul {
+    display: none;
+  }
+
+  .search-icon {
+    top: 1rem;
+    left: 0.25rem;
+  }
+}
+
+@media (max-width: 1065px) {
+  #overview {
+    flex-direction: column;
+  }
+
+  .overview-image {
+    max-width: 100%;
+  }
+
+  .details-with-form {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hospital-card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .secondary-nav-bar {
+    display: none;
+  }
+
+  .doctor-card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .carousel-card-container {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1rem;
+  }
+
+  .carousel-card {
+    max-width: 100%;
+  }
+
+  @media (max-width: 700px) {
+    header,
+    .hospitals,
+    .doctors,
+    .secondary-footer,
+    .primary-footer,
+    .secondary-cta,
+    .primary-nav-bar,
+    .cta-container,
+    .details-section {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    footer {
+      font-size: 0.75rem;
+    }
+
+    .link-lists {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .join-card-container {
+      position: static;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .join-card {
+      padding: 0.25rem 0.5rem;
+    }
+
+    .cta * {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .footer-details {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    .about {
+      text-align: center;
+    }
+    .header-logo-container {
+      gap: 2rem;
+    }
+    .cta * {
+      font-size: 1rem;
+    }
   }
 }
