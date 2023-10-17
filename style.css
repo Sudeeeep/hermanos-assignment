@@ -171,7 +171,8 @@ header {
   margin-bottom: 2rem;
 }
 
-.cta-btn {
+.cta-btn,
+.secondary-cta-btn {
   background-color: #40b8fb;
   color: white;
   font-size: 1.25rem;
@@ -181,7 +182,8 @@ header {
   cursor: pointer;
 }
 
-.cta-btn:hover {
+.cta-btn:hover,
+.secondary-cta-btn:hover {
   transform: scale(1.02);
 }
 
@@ -353,6 +355,41 @@ form button {
 .accordian.active .accordian-label::before {
   content: "-";
   padding: 0 0.5rem;
+}
+
+/*Secondary call to action*/
+.secondary-cta {
+  background-color: #40b8fb;
+  color: white;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.secondary-cta h1 {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.secondary-cta p {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.secondary-cta-sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.secondary-cta-btn-container {
+  padding: 1rem;
+  border-right: 1px solid;
+}
+
+.secondary-cta-btn {
+  background-color: #107df7;
 }
 
 @media (max-width: 1256px) {
