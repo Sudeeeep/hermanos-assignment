@@ -679,6 +679,21 @@ footer {
   text-decoration: underline;
 }
 
+#loader {
+  width: 70px;
+  height: 70px;
+  font-size: 3rem;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 @media (max-width: 1256px) {
   /* Header */
 
