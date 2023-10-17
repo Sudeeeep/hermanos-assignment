@@ -180,6 +180,27 @@ header {
   transform: scale(1.02);
 }
 
+.secondary-nav-bar {
+  display: flex;
+  padding: 0 4rem;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(138, 138, 138, 0.84);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(138, 138, 138, 0.84);
+  box-shadow: 0px 3px 5px 0px rgba(138, 138, 138, 0.84);
+}
+
+.secondary-nav-bar > a {
+  text-decoration: none;
+  color: black;
+  padding: 1.25rem 1.25rem;
+  cursor: pointer;
+  color: #5a5e65;
+  font-weight: 600;
+}
+
+.secondary-nav-bar > a:focus {
+  border-bottom: 3px solid #107df7;
+}
+
 @media (max-width: 1256px) {
   /* Header */
 
